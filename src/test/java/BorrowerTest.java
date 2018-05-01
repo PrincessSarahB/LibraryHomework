@@ -13,7 +13,7 @@ public class BorrowerTest {
 
     public void before(){
         borrower = new Borrower("Sarah");
-        book = new Book();
+        book = new Book("War & Peace", "Classic");
         library = new Library("Sarah's Library", 4);
         library.addBook(book);
 
