@@ -10,7 +10,7 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library("Sarah's Library");
+        library = new Library("Sarah's Library", 4);
         book = new Book();
     }
 
@@ -24,4 +24,7 @@ public class LibraryTest {
         library.addBook(book);
         assertEquals(1, library.countBooks());
     }
+
+
+
 }
