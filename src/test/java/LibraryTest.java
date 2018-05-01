@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class LibraryTest {
 
@@ -33,6 +34,15 @@ public class LibraryTest {
         library.addBook(book);
         library.addBook(book);
         assertEquals(4,library.countBooks());
+    }
+
+    @Test
+
+    public void bookCanBeBorrowed(){
+        library.addBook(book);
+        Book result = library.removeBook();
+        assertNotNull(result);
+
     }
 
 
